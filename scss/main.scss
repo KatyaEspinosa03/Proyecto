@@ -1,0 +1,388 @@
+@import "fonts";
+
+@import "colors";
+
+body {
+    background-image: linear-gradient(#ffffffb3,#F5EDF0, #D1CCDC, #4A4063);
+}
+
+header {
+    display: grid;
+    position: sticky;
+    top: 0px;
+    width: 100%;  
+    grid-column-start: 1;
+    grid-column-end: 5; 
+    background-color: #ffffffb3;
+
+    nav a:hover{
+        color: $colorLightPurple;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 30px;
+        font-size: 18px;
+        text-align: right;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    li a {
+        padding: 8px;
+        color: $colorPurple;
+        font-weight: bold;
+        font-family: "Inter";
+    }
+
+    a {
+
+        text-decoration: none;
+        color: $colorDarkPurple;
+        font-family: "Inter";
+    
+    }
+
+}
+
+footer {
+    color: $colorPurple;
+    background-color: rgb(209, 203, 220);
+    border-radius: 25px;
+
+    .contacto-footer h3 {
+        text-align: left;
+        font-family: "Inter";
+        font-weight: bold;
+        margin-top: 5%;
+        font-size: 125%;
+    }
+
+    .contacto-footer h4 {
+    margin: 0%;
+    font-family: "Inter";
+    color: $colorDarkPurple;
+    font-size: 125%;
+}
+    
+    footer li {
+
+        display: inline;
+    }
+
+    footer ul {
+        text-align: right;
+    }
+
+    footer img {
+
+        width: 8%;
+
+    } 
+
+    #imagen-youtube-footer {
+
+        width: 7%;
+
+    }
+    #imagen-spotify-footer {
+
+        width: 7.5%;
+
+    }
+}
+
+.inicio {
+
+    .col-md-5 .img-fluid {
+        margin: auto;    
+        display: block;
+        width: 70%;
+        border-radius: 25px;
+    }
+    
+    #titulo-inicio h1 {
+        font-family: "Career";
+        font-weight: bold;
+        margin-top: 5%;
+        color: rgb(130, 90, 179);
+        text-align: left;
+        font-size: 225%;
+    
+        #subtitulo {
+            text-align: left;
+            text-align: justify;
+            font-family: "Career";
+            font-weight: bold;
+            color: rgb(130, 90, 179);
+        
+        }
+    }
+
+    .descripcion {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    
+        #descripcion h3 {
+            text-align: left;
+            text-align: justify;
+            font-family: "Inter Medium";
+            color:#483c69;
+            font-weight: bold;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        
+    }
+}
+
+
+
+.seccion1 div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+
+    #terapiaimagen {
+        align-self: end;
+        justify-self: end;
+        width: 100%;
+        margin-top: 10%;
+        border-radius: 25px;
+    }
+    
+}
+
+#servicios h1 {
+    font-family:"Inter";
+    color: rgb(130, 90, 179);
+    text-align: left;
+    font-size: 180%;
+
+    #servicios h3 {
+
+        color: #716A82;
+        text-align: left;
+        text-align: justify;
+        font-family: "Inter Medium";
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    #servicios h4 {
+        color: rgb(67, 39, 105);
+        text-align: right;
+        font-family: "Inter Regular";
+        font-weight: bold;
+        font-size: 125%;
+    }
+}
+
+.button {
+
+    background-color:#D1CCDC;
+    color:#4A4063;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Inter";
+    border-radius: 7px;
+    
+}
+
+.proyectos {
+
+    h1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-self: center;
+        text-align: center;
+        color: rgb(88, 52, 132);
+        font-family:"Career";
+        font-size: 200%;
+    }
+    
+    .youtube {
+        width: 500px;
+        height: 500px;
+    
+        #imagen-youtube {
+            width: 100%;
+            border-radius: 25px;
+        } 
+    
+        .texto-youtube h2 {
+            margin-top: 5%;
+            color: #716A82;
+            text-align: left;
+            text-align: justify;
+            font-weight: bold;
+            font-family: "Inter Medium";
+            margin-bottom: 10%;
+            font-size: 150%;
+        }
+    }
+
+    .spotify {
+        width: 500px;
+        height: 500px;
+    
+        #imagen-spotify {
+            width: 100%;
+            margin-top: 10%;
+            border-radius: 25px;
+        } 
+        
+        
+        .texto-spotify h2 {
+            margin-top: 5%;
+            color: #716A82;
+            text-align: right;
+            font-weight: bold;
+            font-family: "Inter Medium";
+            font-size: 150%;
+            width: 500px;
+        
+        }
+    
+    }
+}
+
+
+.sobre-mi-descripcion {
+
+    .sobre-mi h1 {
+        color:rgb(130, 90, 179);
+        font-family:"Career";
+        margin: 0%;
+        text-align: center;
+    }
+
+    #subtitulo {
+        text-align: center;
+        
+    }
+    
+    h3 {
+
+        text-align: center;
+        text-align: justify;
+        font-family: "Inter Medium";
+        font-weight: bold;
+        color:#4f446d;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 150%;
+        
+    }
+
+    .lista-estudios {
+        text-align: left;
+        color:#4f446d;
+    }
+    
+    .lista-estudios li {
+        text-align: left;
+        font-size: 150%;
+    }
+    
+    .nested-list {
+        padding-top: 0%;
+    }
+    
+    .nested-list li {
+        font-size: 125%;
+    }
+    
+    div .agenda-cita {
+        display: flex;
+        flex-direction: column;
+    }    
+    
+}
+
+
+.pagina-citas{
+
+    #titulo-citas h1 {
+        color: rgb(88, 52, 132);
+        font-family:"Career";
+        font-size: 200%;
+        text-align: center;
+    }
+
+    .formulario {
+        display: grid;
+        grid-column-start: 3;
+        grid-row-end: 4;
+        text-align: center;
+        font-family:"Career";
+        font-size: 130%;
+        color: #702b92;
+        margin-bottom: 5%;
+
+        h2{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        span.taller {
+            font-family: "Inter";
+            font-size: 80%;
+            background-color: white;
+            border-radius: 5px;
+            align-self: center;
+            padding: 5%;
+        }
+        
+        span.tradicional {
+            background-color: white;
+            font-family: "Inter";
+            font-size: 80%;
+            border-radius: 5px;
+            align-self: center;
+            padding: 5%;
+        }
+
+        #agendar {
+
+            background-color:#D1CCDC;
+            color:#4A4063;
+            padding: 10px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            font-family:"Inter";
+        }
+        
+        #horario {
+            background-color:#f5f3f8;
+            color:#4A4063;
+            padding: 10px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            font-family:"Inter";
+        }
+
+        #mensaje {
+            height: 100px;
+            width: 200px;
+        }
+    }
+    
+}
