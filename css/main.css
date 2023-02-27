@@ -14,16 +14,18 @@
   font-family: "Inter Medium";
   src: url(./assets/fonts/Inter-Medium.ttf); }
 body {
-  background-image: linear-gradient(#ffffffb3, #F5EDF0, #D1CCDC, #4A4063); }
+  background-image: linear-gradient(#ffffffb3, #F5EDF0, #D1CCDC, #4a4063); }
+
+.propiedad-texto, .inicio #titulo-inicio h1 #subtitulo, .inicio .descripcion #descripcion h3, #servicios h1 #servicios h3 {
+  text-align: left;
+  text-align: justify; }
 
 header {
   display: grid;
   position: sticky;
   top: 0px;
   width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  background-color: #ffffffb3; }
+  background-color: rgba(255, 255, 255, 0.702); }
   header nav a:hover {
     color: #baa8dd; }
   header ul {
@@ -82,8 +84,6 @@ footer {
   text-align: left;
   font-size: 225%; }
   .inicio #titulo-inicio h1 #subtitulo {
-    text-align: left;
-    text-align: justify;
     font-family: "Career";
     font-weight: bold;
     color: #825ab3; }
@@ -91,13 +91,9 @@ footer {
   margin-top: 5%;
   margin-bottom: 5%; }
   .inicio .descripcion #descripcion h3 {
-    text-align: left;
-    text-align: justify;
     font-family: "Inter Medium";
     color: #483c69;
-    font-weight: bold;
-    margin-top: 5%;
-    margin-bottom: 5%; }
+    font-weight: bold; }
 
 .seccion1 div {
   display: flex;
@@ -120,9 +116,7 @@ footer {
   text-align: left;
   font-size: 180%; }
   #servicios h1 #servicios h3 {
-    color: #716A82;
-    text-align: left;
-    text-align: justify;
+    color: #716a82;
     font-family: "Inter Medium";
     font-weight: bold;
     font-size: 150%; }
@@ -133,9 +127,9 @@ footer {
     font-weight: bold;
     font-size: 125%; }
 
-.button {
+.button, .pagina-citas .formulario #agendar {
   background-color: #D1CCDC;
-  color: #4A4063;
+  color: #4a4063;
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
@@ -215,7 +209,7 @@ footer {
   flex-direction: column; }
 
 .pagina-citas #titulo-citas h1 {
-  color: #583484;
+  color: #3a1f5b;
   font-family: "Career";
   font-size: 200%;
   text-align: center; }
@@ -232,33 +226,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-self: center; }
-  .pagina-citas .formulario span.taller {
+  .pagina-citas .formulario span.taller, .pagina-citas .formulario span.tradicional {
     font-family: "Inter";
     font-size: 80%;
     background-color: white;
     border-radius: 5px;
     align-self: center;
     padding: 5%; }
-  .pagina-citas .formulario span.tradicional {
-    background-color: white;
-    font-family: "Inter";
-    font-size: 80%;
-    border-radius: 5px;
-    align-self: center;
-    padding: 5%; }
-  .pagina-citas .formulario #agendar {
-    background-color: #D1CCDC;
-    color: #4A4063;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: "Inter"; }
   .pagina-citas .formulario #horario {
     background-color: #f5f3f8;
-    color: #4A4063;
+    color: #4a4063;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;

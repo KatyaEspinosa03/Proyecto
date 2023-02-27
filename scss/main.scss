@@ -3,7 +3,13 @@
 @import "colors";
 
 body {
-    background-image: linear-gradient(#ffffffb3,#F5EDF0, #D1CCDC, #4A4063);
+    background-image: linear-gradient(#ffffffb3,#F5EDF0, #D1CCDC, $colorBackgroundDark);
+}
+.propiedad-texto{
+
+    text-align: left;
+    text-align: justify;
+
 }
 
 header {
@@ -11,9 +17,7 @@ header {
     position: sticky;
     top: 0px;
     width: 100%;  
-    grid-column-start: 1;
-    grid-column-end: 5; 
-    background-color: #ffffffb3;
+    background-color: $colorBackgroundLight;
 
     nav a:hover{
         color: $colorLightPurple;
@@ -107,16 +111,15 @@ footer {
         font-family: "Career";
         font-weight: bold;
         margin-top: 5%;
-        color: rgb(130, 90, 179);
+        color: $colorPurple;
         text-align: left;
         font-size: 225%;
     
         #subtitulo {
-            text-align: left;
-            text-align: justify;
+            @extend .propiedad-texto;
             font-family: "Career";
             font-weight: bold;
-            color: rgb(130, 90, 179);
+            color: $colorPurple;
         
         }
     }
@@ -126,13 +129,10 @@ footer {
         margin-bottom: 5%;
     
         #descripcion h3 {
-            text-align: left;
-            text-align: justify;
+            @extend .propiedad-texto;
             font-family: "Inter Medium";
-            color:#483c69;
+            color:rgb(72, 60, 105);
             font-weight: bold;
-            margin-top: 5%;
-            margin-bottom: 5%;
         }
         
     }
@@ -161,15 +161,14 @@ footer {
 
 #servicios h1 {
     font-family:"Inter";
-    color: rgb(130, 90, 179);
+    color: $colorPurple;
     text-align: left;
     font-size: 180%;
 
     #servicios h3 {
 
-        color: #716A82;
-        text-align: left;
-        text-align: justify;
+        color: rgb(113, 106, 130);
+        @extend .propiedad-texto;
         font-family: "Inter Medium";
         font-weight: bold;
         font-size: 150%;
@@ -187,7 +186,7 @@ footer {
 .button {
 
     background-color:#D1CCDC;
-    color:#4A4063;
+    color:$colorBackgroundDark;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -314,7 +313,7 @@ footer {
 .pagina-citas{
 
     #titulo-citas h1 {
-        color: rgb(88, 52, 132);
+        color: $colorDarkPurple;
         font-family:"Career";
         font-size: 200%;
         text-align: center;
@@ -346,30 +345,16 @@ footer {
         }
         
         span.tradicional {
-            background-color: white;
-            font-family: "Inter";
-            font-size: 80%;
-            border-radius: 5px;
-            align-self: center;
-            padding: 5%;
+            @extend span, .taller;
         }
 
         #agendar {
-
-            background-color:#D1CCDC;
-            color:#4A4063;
-            padding: 10px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
-            font-family:"Inter";
+            @extend .button    
         }
         
         #horario {
-            background-color:#f5f3f8;
-            color:#4A4063;
+            background-color:rgb(245, 243, 248);
+            color: $colorBackgroundDark;
             padding: 10px 32px;
             text-align: center;
             text-decoration: none;
