@@ -16,10 +16,6 @@
 body {
   background-image: linear-gradient(#ffffffb3, #F5EDF0, #D1CCDC, #4a4063); }
 
-.propiedad-texto, .inicio .subtitulo, .inicio .descripcion h3, #servicios h1 #servicios h3 {
-  text-align: left;
-  text-align: justify; }
-
 header {
   display: grid;
   position: sticky;
@@ -62,19 +58,24 @@ footer {
     margin-top: 0%;
     color: #3a1f5b;
     text-align: left;
-    font-size: 115%; }
+    font-size: 115%;
+    margin: 0%; }
     footer .contacto-footer h4 a {
       font-family: "Inter";
       font-weight: none;
       margin-top: 0%;
       color: #3a1f5b;
       text-align: left;
-      font-size: 90%; }
+      font-size: 90%;
+      text-decoration: none; }
   footer .lista-footer ul {
-    margin-top: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-align: right; }
     footer .lista-footer ul li {
       display: inline; }
+      footer .lista-footer ul li a {
+        text-decoration: none; }
   footer .lista-footer img {
     width: 8%; }
   footer .lista-footer #imagen-youtube-footer {
@@ -110,9 +111,10 @@ footer {
     margin-top: none;
     color: #483c69;
     text-align: left;
-    font-size: auto; }
+    font-size: auto;
+    text-align: justify; }
 
-.seccion1 div {
+.seccion1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -120,33 +122,33 @@ footer {
   justify-content: center;
   text-align: center;
   margin-top: 10px; }
-  .seccion1 div #terapiaimagen {
+  .seccion1 #terapiaimagen {
     align-self: end;
     justify-self: end;
     width: 100%;
     margin-top: 10%;
     border-radius: 25px; }
 
-#servicios h1 {
+.descripcion #servicios h1 {
   font-family: "Inter";
   font-weight: none;
   margin-top: none;
   color: #825ab3;
   text-align: left;
   font-size: 180%; }
-  #servicios h1 #servicios h3 {
-    font-family: "Inter Medium";
-    font-weight: bold;
-    margin-top: none;
-    color: #716a82;
-    text-align: left;
-    font-size: 150%; }
-  #servicios h1 #servicios h4 {
-    color: #432769;
-    text-align: right;
-    font-family: "Inter Regular";
-    font-weight: bold;
-    font-size: 125%; }
+.descripcion #servicios h3 {
+  font-family: "Inter Medium";
+  font-weight: bold;
+  margin-top: none;
+  color: #716a82;
+  text-align: left;
+  font-size: 150%; }
+.descripcion #servicios h4 {
+  color: #432769;
+  text-align: right;
+  font-family: "Inter Regular";
+  font-weight: bold;
+  font-size: 125%; }
 
 .button, .pagina-citas .formulario #agendar {
   background-color: #D1CCDC;

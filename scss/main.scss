@@ -20,13 +20,6 @@ body {
 }
 
 
-.propiedad-texto{
-
-    text-align: left;
-    text-align: justify;
-
-}
-
 header {
     display: grid;
     position: sticky;
@@ -79,21 +72,28 @@ footer {
 
         h4 {
             @include estilo-texto("Inter", none, 0%, $colorDarkPurple, left, 115%);
-
+            margin: 0%;
+            
             a {
                 @include estilo-texto("Inter", none, 0%, $colorDarkPurple, left, 90%);
-
+                text-decoration: none;
             }
         }
     }
     .lista-footer {
 
         ul {
-            margin-top: 3%;
+            margin-top: 5%;
+            margin-bottom: 5%;
             text-align: right;
+
 
             li {
             display: inline;
+
+                a{
+                    text-decoration: none;
+                }
             }
         }
 
@@ -131,26 +131,24 @@ footer {
     }
 
     .subtitulo {
-
-        @extend .propiedad-texto;
         @include estilo-texto("Career", bold, 0%, $colorPurple, left, 125%);
     }
 
     .descripcion {
         margin-top: 5%;
         margin-bottom: 5%;
-    
+
         h3 {
-            @extend .propiedad-texto;
-            @include estilo-texto("Inter Medium", bold, none, rgb(72, 60, 105), left, auto);
+        @include estilo-texto("Inter Medium", bold, none, rgb(72, 60, 105), left, auto);
+        text-align: justify;
         }
-        
     }
+
 }
 
 
 
-.seccion1 div{
+.seccion1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -169,22 +167,25 @@ footer {
     
 }
 
-#servicios h1 {
-    @include estilo-texto("Inter", none, none, $colorPurple , left, 180%);
+.descripcion {
+    #servicios { 
+        h1 {
+        @include estilo-texto("Inter", none, none, $colorPurple , left, 180%);
+        }
+        
+        h3 {
+            @include estilo-texto("Inter Medium", bold, none,rgb(113, 106, 130) , left, 150%);
+        }
 
-
-    #servicios h3 {
-        @include estilo-texto("Inter Medium", bold, none,rgb(113, 106, 130) , left, 150%);
-        @extend .propiedad-texto;
+        h4 {
+            color: rgb(67, 39, 105);
+            text-align: right;
+            font-family: "Inter Regular";
+            font-weight: bold;
+            font-size: 125%;
+        }
     }
 
-    #servicios h4 {
-        color: rgb(67, 39, 105);
-        text-align: right;
-        font-family: "Inter Regular";
-        font-weight: bold;
-        font-size: 125%;
-    }
 }
 
 .button {
