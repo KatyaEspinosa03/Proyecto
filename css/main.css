@@ -13,9 +13,6 @@
 @font-face {
   font-family: "Inter Medium";
   src: url(./assets/fonts/Inter-Medium.ttf); }
-body {
-  background-image: linear-gradient(#ffffffb3, #F5EDF0, #D1CCDC, #4a4063); }
-
 .estilo-proyectos, .proyectos .youtube, .proyectos .spotify {
   width: 500px;
   height: 500px; }
@@ -25,6 +22,9 @@ body {
   border-radius: 25px;
   transform: scale(0.8, 0.8);
   transition: 1s; }
+
+body {
+  background-image: linear-gradient(#ffffffb3, #F5EDF0, #D1CCDC, #4a4063); }
 
 header {
   display: grid;
@@ -99,7 +99,7 @@ footer {
   display: block;
   width: 70%;
   border-radius: 25px; }
-.inicio #titulo-inicio h1 {
+.inicio #titulo-inicio h1, .inicio #titulo-inicio .sobre-mi h3, .sobre-mi .inicio #titulo-inicio h3 {
   font-family: "Career";
   font-weight: bold;
   margin-top: 5%;
@@ -143,7 +143,7 @@ footer {
 .descripcion #servicios {
   margin-top: 10%;
   margin-bottom: 10%; }
-  .descripcion #servicios h1 {
+  .descripcion #servicios h1, .descripcion #servicios .sobre-mi h3, .sobre-mi .descripcion #servicios h3 {
     font-family: "Inter";
     font-weight: none;
     margin-top: auto;
@@ -182,7 +182,7 @@ footer {
     font-family: "Inter";
     border-radius: 7px; }
 
-.proyectos h1 {
+.proyectos h1, .proyectos .sobre-mi h3, .sobre-mi .proyectos h3 {
   display: flex;
   flex-direction: column-reverse;
   justify-self: center;
@@ -212,37 +212,36 @@ footer {
   font-size: 150%;
   width: 500px; }
 
-.sobre-mi-descripcion .sobre-mi h1 {
-  color: #825ab3;
+.sobre-mi h1, .sobre-mi h3 {
   font-family: "Career";
-  margin: 0%;
-  text-align: center; }
-.sobre-mi-descripcion #subtitulo {
-  text-align: center; }
-.sobre-mi-descripcion h3 {
+  font-weight: none;
+  margin-top: auto;
+  color: #825ab3;
   text-align: center;
-  text-align: justify;
+  font-size: 180%; }
+.sobre-mi .sobre-mi-descripcion h3 {
   font-family: "Inter Medium";
   font-weight: bold;
-  color: #4f446d;
   margin-top: 5%;
-  margin-bottom: 5%;
-  font-size: 150%; }
-.sobre-mi-descripcion .lista-estudios {
+  color: #4f446d;
+  text-align: center;
+  font-size: 150%;
+  text-align: justify;
+  margin-bottom: 5%; }
+.sobre-mi .sobre-mi-descripcion .lista-estudios ul {
   text-align: left;
   color: #4f446d; }
-.sobre-mi-descripcion .lista-estudios li {
-  text-align: left;
-  font-size: 150%; }
-.sobre-mi-descripcion .nested-list {
-  padding-top: 0%; }
-.sobre-mi-descripcion .nested-list li {
-  font-size: 125%; }
-.sobre-mi-descripcion div .agenda-cita {
+  .sobre-mi .sobre-mi-descripcion .lista-estudios ul li {
+    text-align: left;
+    font-size: 115%; }
+.sobre-mi .sobre-mi-descripcion .lista-estudios .nested-list li {
+  font-size: 90%;
+  text-align: justify; }
+.sobre-mi .agenda-cita {
   display: flex;
   flex-direction: column; }
 
-.pagina-citas #titulo-citas h1 {
+.pagina-citas #titulo-citas h1, .pagina-citas #titulo-citas .sobre-mi h3, .sobre-mi .pagina-citas #titulo-citas h3 {
   color: #3a1f5b;
   font-family: "Career";
   font-size: 200%;

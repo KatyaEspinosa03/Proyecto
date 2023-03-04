@@ -1,0 +1,12 @@
+@mixin border-radius ($border) {
+    border-radius: $border;
+}
+
+@mixin estilo-texto ($font-family,$font-weight, $margin-top, $color, $text-align, $font-size) {
+        font-family: $font-family;
+        font-weight: $font-weight;
+        margin-top: $margin-top;
+        color: $color;
+        text-align: $text-align;
+        font-size: $font-size;
+}

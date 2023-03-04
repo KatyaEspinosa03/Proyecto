@@ -2,34 +2,12 @@
 
 @import "colors";
 
+@import "mixins";
+
+@import "styletemplates";
+
 body {
     background-image: linear-gradient(#ffffffb3,#F5EDF0, #D1CCDC, $colorBackgroundDark);
-}
-
-@mixin border-radius ($border) {
-    border-radius: $border;
-}
-
-@mixin estilo-texto ($font-family,$font-weight, $margin-top, $color, $text-align, $font-size) {
-        font-family: $font-family;
-        font-weight: $font-weight;
-        margin-top: $margin-top;
-        color: $color;
-        text-align: $text-align;
-        font-size: $font-size;
-}
-
-
-.estilo-proyectos {
-    width: 500px;
-    height: 500px;
-}
-
-.estilo-proyectos-imagenes {
-    width: 100%;
-    border-radius: 25px;
-    transform: scale(.8, .8);
-    transition: 1s;
 }
 
 
@@ -160,8 +138,6 @@ footer {
 
 }
 
-
-
 .seccion1 {
     display: flex;
     flex-direction: column;
@@ -284,59 +260,51 @@ footer {
     }
 }
 
+.sobre-mi {
 
-.sobre-mi-descripcion {
-
-    .sobre-mi h1 {
-        color:rgb(130, 90, 179);
-        font-family:"Career";
-        margin: 0%;
-        text-align: center;
+    h1 {
+        @include estilo-texto("Career", none, auto, $colorPurple, center, 180%);
     }
-
-    #subtitulo {
-        text-align: center;
-        
-    }
-    
     h3 {
-
-        text-align: center;
-        text-align: justify;
-        font-family: "Inter Medium";
-        font-weight: bold;
-        color:#4f446d;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        font-size: 150%;
+        @extend h1;
         
     }
+    .sobre-mi-descripcion{
 
-    .lista-estudios {
-        text-align: left;
-        color:#4f446d;
+        h3 {
+            @include estilo-texto("Inter Medium", bold, 5%, $colorPurpleSobreMi, center, 150%);
+            text-align: justify;
+            margin-bottom: 5%;
+            
+        }
+
+        .lista-estudios {
+
+            ul {
+            text-align: left;
+            color:$colorPurpleSobreMi;
+
+                li {
+                text-align: left;
+                font-size: 115%;
+                }
+            }
+
+            .nested-list {
+
+                    li {
+                    font-size: 90%;
+                    text-align: justify;
+                    }
+            }
+        }  
     }
-    
-    .lista-estudios li {
-        text-align: left;
-        font-size: 150%;
-    }
-    
-    .nested-list {
-        padding-top: 0%;
-    }
-    
-    .nested-list li {
-        font-size: 125%;
-    }
-    
-    div .agenda-cita {
+            
+    .agenda-cita {
         display: flex;
         flex-direction: column;
-    }    
-    
+    }  
 }
-
 
 .pagina-citas{
 
