@@ -320,9 +320,6 @@ footer {
     }
 
     .formulario {
-        display: grid;
-        grid-column-start: 3;
-        grid-row-end: 4;
         text-align: center;
         font-family:"Career";
         font-size: 130%;
@@ -341,7 +338,6 @@ footer {
             background-color: white;
             border-radius: 5px;
             align-self: center;
-            padding: 5%;
         }
         
         span.tradicional {
@@ -367,7 +363,8 @@ footer {
         #mensaje {
             height: 100px;
             width: 200px;
-        }
-    }
+        } 
+    } 
     
 }
+    
