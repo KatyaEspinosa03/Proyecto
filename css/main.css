@@ -16,7 +16,7 @@
 body {
   background-image: linear-gradient(#ffffffb3, #F5EDF0, #D1CCDC, #4a4063); }
 
-.propiedad-texto, .inicio #titulo-inicio h1 #subtitulo, .inicio .descripcion #descripcion h3, #servicios h1 #servicios h3 {
+.propiedad-texto, .inicio .subtitulo, .inicio .descripcion h3, #servicios h1 #servicios h3 {
   text-align: left;
   text-align: justify; }
 
@@ -50,25 +50,36 @@ footer {
   background-color: #d1cbdc;
   border-radius: 25px; }
   footer .contacto-footer h3 {
-    text-align: left;
     font-family: "Inter";
     font-weight: bold;
     margin-top: 5%;
+    color: #825ab3;
+    text-align: left;
     font-size: 125%; }
   footer .contacto-footer h4 {
-    margin: 0%;
     font-family: "Inter";
+    font-weight: none;
+    margin-top: 0%;
     color: #3a1f5b;
-    font-size: 125%; }
-  footer footer li {
-    display: inline; }
-  footer footer ul {
+    text-align: left;
+    font-size: 115%; }
+    footer .contacto-footer h4 a {
+      font-family: "Inter";
+      font-weight: none;
+      margin-top: 0%;
+      color: #3a1f5b;
+      text-align: left;
+      font-size: 90%; }
+  footer .lista-footer ul {
+    margin-top: 3%;
     text-align: right; }
-  footer footer img {
+    footer .lista-footer ul li {
+      display: inline; }
+  footer .lista-footer img {
     width: 8%; }
-  footer #imagen-youtube-footer {
+  footer .lista-footer #imagen-youtube-footer {
     width: 7%; }
-  footer #imagen-spotify-footer {
+  footer .lista-footer #imagen-spotify-footer {
     width: 7.5%; }
 
 .inicio .col-md-5 .img-fluid {
@@ -83,17 +94,23 @@ footer {
   color: #825ab3;
   text-align: left;
   font-size: 225%; }
-  .inicio #titulo-inicio h1 #subtitulo {
-    font-family: "Career";
-    font-weight: bold;
-    color: #825ab3; }
+.inicio .subtitulo {
+  font-family: "Career";
+  font-weight: bold;
+  margin-top: 0%;
+  color: #825ab3;
+  text-align: left;
+  font-size: 125%; }
 .inicio .descripcion {
   margin-top: 5%;
   margin-bottom: 5%; }
-  .inicio .descripcion #descripcion h3 {
+  .inicio .descripcion h3 {
     font-family: "Inter Medium";
+    font-weight: bold;
+    margin-top: none;
     color: #483c69;
-    font-weight: bold; }
+    text-align: left;
+    font-size: auto; }
 
 .seccion1 div {
   display: flex;
@@ -112,13 +129,17 @@ footer {
 
 #servicios h1 {
   font-family: "Inter";
+  font-weight: none;
+  margin-top: none;
   color: #825ab3;
   text-align: left;
   font-size: 180%; }
   #servicios h1 #servicios h3 {
-    color: #716a82;
     font-family: "Inter Medium";
     font-weight: bold;
+    margin-top: none;
+    color: #716a82;
+    text-align: left;
     font-size: 150%; }
   #servicios h1 #servicios h4 {
     color: #432769;

@@ -5,6 +5,21 @@
 body {
     background-image: linear-gradient(#ffffffb3,#F5EDF0, #D1CCDC, $colorBackgroundDark);
 }
+
+@mixin border-radius ($border) {
+    border-radius: $border;
+}
+
+@mixin estilo-texto ($font-family,$font-weight, $margin-top, $color, $text-align, $font-size) {
+        font-family: $font-family;
+        font-weight: $font-weight;
+        margin-top: $margin-top;
+        color: $color;
+        text-align: $text-align;
+        font-size: $font-size;
+}
+
+
 .propiedad-texto{
 
     text-align: left;
@@ -54,47 +69,50 @@ header {
 footer {
     color: $colorPurple;
     background-color: rgb(209, 203, 220);
-    border-radius: 25px;
+    @include border-radius(25px);
 
-    .contacto-footer h3 {
-        text-align: left;
-        font-family: "Inter";
-        font-weight: bold;
-        margin-top: 5%;
-        font-size: 125%;
+    .contacto-footer{
+
+        h3 {
+            @include estilo-texto("Inter", bold, 5%, $colorPurple, left, 125%);
+        }
+
+        h4 {
+            @include estilo-texto("Inter", none, 0%, $colorDarkPurple, left, 115%);
+
+            a {
+                @include estilo-texto("Inter", none, 0%, $colorDarkPurple, left, 90%);
+
+            }
+        }
     }
+    .lista-footer {
 
-    .contacto-footer h4 {
-    margin: 0%;
-    font-family: "Inter";
-    color: $colorDarkPurple;
-    font-size: 125%;
-}
-    
-    footer li {
+        ul {
+            margin-top: 3%;
+            text-align: right;
 
-        display: inline;
-    }
+            li {
+            display: inline;
+            }
+        }
 
-    footer ul {
-        text-align: right;
-    }
+        img {
 
-    footer img {
+            width: 8%;
 
-        width: 8%;
+        } 
 
-    } 
+        #imagen-youtube-footer {
 
-    #imagen-youtube-footer {
+            width: 7%;
 
-        width: 7%;
+        }
+        #imagen-spotify-footer {
 
-    }
-    #imagen-spotify-footer {
+            width: 7.5%;
 
-        width: 7.5%;
-
+        }
     }
 }
 
@@ -104,35 +122,27 @@ footer {
         margin: auto;    
         display: block;
         width: 70%;
-        border-radius: 25px;
+        @include border-radius(25px);
+
     }
     
     #titulo-inicio h1 {
-        font-family: "Career";
-        font-weight: bold;
-        margin-top: 5%;
-        color: $colorPurple;
-        text-align: left;
-        font-size: 225%;
-    
-        #subtitulo {
-            @extend .propiedad-texto;
-            font-family: "Career";
-            font-weight: bold;
-            color: $colorPurple;
-        
-        }
+        @include estilo-texto("Career", bold, 5%, $colorPurple, left, 225%);
+    }
+
+    .subtitulo {
+
+        @extend .propiedad-texto;
+        @include estilo-texto("Career", bold, 0%, $colorPurple, left, 125%);
     }
 
     .descripcion {
         margin-top: 5%;
         margin-bottom: 5%;
     
-        #descripcion h3 {
+        h3 {
             @extend .propiedad-texto;
-            font-family: "Inter Medium";
-            color:rgb(72, 60, 105);
-            font-weight: bold;
+            @include estilo-texto("Inter Medium", bold, none, rgb(72, 60, 105), left, auto);
         }
         
     }
@@ -154,24 +164,18 @@ footer {
         justify-self: end;
         width: 100%;
         margin-top: 10%;
-        border-radius: 25px;
+        @include border-radius(25px);
     }
     
 }
 
 #servicios h1 {
-    font-family:"Inter";
-    color: $colorPurple;
-    text-align: left;
-    font-size: 180%;
+    @include estilo-texto("Inter", none, none, $colorPurple , left, 180%);
+
 
     #servicios h3 {
-
-        color: rgb(113, 106, 130);
+        @include estilo-texto("Inter Medium", bold, none,rgb(113, 106, 130) , left, 150%);
         @extend .propiedad-texto;
-        font-family: "Inter Medium";
-        font-weight: bold;
-        font-size: 150%;
     }
 
     #servicios h4 {
@@ -194,7 +198,7 @@ footer {
     font-size: 16px;
     cursor: pointer;
     font-family: "Inter";
-    border-radius: 7px;
+    @include border-radius(7px);
     
 }
 
@@ -216,7 +220,7 @@ footer {
     
         #imagen-youtube {
             width: 100%;
-            border-radius: 25px;
+            @include border-radius(25px);
         } 
     
         .texto-youtube h2 {
@@ -238,7 +242,7 @@ footer {
         #imagen-spotify {
             width: 100%;
             margin-top: 10%;
-            border-radius: 25px;
+            @include border-radius(25px);
         } 
         
         
@@ -336,7 +340,7 @@ footer {
             font-family: "Inter";
             font-size: 80%;
             background-color: white;
-            border-radius: 5px;
+            @include border-radius(5px);
             align-self: center;
         }
         
