@@ -125,42 +125,51 @@ footer {
   .seccion1 #terapiaimagen {
     align-self: end;
     justify-self: end;
-    width: 100%;
+    width: 90%;
     margin-top: 10%;
     border-radius: 25px; }
 
-.descripcion #servicios h1 {
-  font-family: "Inter";
-  font-weight: none;
-  margin-top: none;
-  color: #825ab3;
-  text-align: left;
-  font-size: 180%; }
-.descripcion #servicios h3 {
-  font-family: "Inter Medium";
-  font-weight: bold;
-  margin-top: none;
-  color: #716a82;
-  text-align: left;
-  font-size: 150%; }
-.descripcion #servicios h4 {
-  color: #432769;
-  text-align: right;
-  font-family: "Inter Regular";
-  font-weight: bold;
-  font-size: 125%; }
+.descripcion #servicios {
+  margin-top: 10%;
+  margin-bottom: 10%; }
+  .descripcion #servicios h1 {
+    font-family: "Inter";
+    font-weight: none;
+    margin-top: auto;
+    color: #825ab3;
+    text-align: left;
+    font-size: 180%; }
+  .descripcion #servicios h3 {
+    font-family: "Inter Medium";
+    font-weight: bold;
+    margin-top: none;
+    color: #716a82;
+    text-align: left;
+    font-size: 150%;
+    text-align: justify; }
+  .descripcion #servicios h4 {
+    font-family: "Inter Regular";
+    font-weight: bold;
+    margin-top: none;
+    color: #432769;
+    text-align: right;
+    font-size: 125%; }
 
-.button, .pagina-citas .formulario #agendar {
-  background-color: #D1CCDC;
-  color: #4a4063;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  font-family: "Inter";
-  border-radius: 7px; }
+.agenda-cita {
+  display: flex;
+  flex-direction: column;
+  justify-self: center; }
+  .agenda-cita .button, .agenda-cita .pagina-citas .formulario #agendar, .pagina-citas .formulario .agenda-cita #agendar {
+    background-color: #D1CCDC;
+    color: #4a4063;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Inter";
+    border-radius: 7px; }
 
 .proyectos h1 {
   display: flex;

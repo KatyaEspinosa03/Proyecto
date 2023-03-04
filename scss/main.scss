@@ -160,7 +160,7 @@ footer {
     #terapiaimagen {
         align-self: end;
         justify-self: end;
-        width: 100%;
+        width: 90%;
         margin-top: 10%;
         @include border-radius(25px);
     }
@@ -169,38 +169,46 @@ footer {
 
 .descripcion {
     #servicios { 
+
+        margin-top: 10%;
+        margin-bottom: 10%;
+
         h1 {
-        @include estilo-texto("Inter", none, none, $colorPurple , left, 180%);
+        @include estilo-texto("Inter", none, auto, $colorPurple , left, 180%);
         }
         
         h3 {
             @include estilo-texto("Inter Medium", bold, none,rgb(113, 106, 130) , left, 150%);
+            text-align: justify;
         }
 
         h4 {
-            color: rgb(67, 39, 105);
-            text-align: right;
-            font-family: "Inter Regular";
-            font-weight: bold;
-            font-size: 125%;
+            @include estilo-texto("Inter Regular", bold, none, rgb(67, 39, 105) , right, 125%);
         }
     }
 
 }
 
-.button {
+.agenda-cita {
 
-    background-color:#D1CCDC;
-    color:$colorBackgroundDark;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: "Inter";
-    @include border-radius(7px);
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
     
+    .button {
+
+        background-color:#D1CCDC;
+        color:$colorBackgroundDark;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: "Inter";
+        @include border-radius(7px);
+        
+    }
 }
 
 .proyectos {
