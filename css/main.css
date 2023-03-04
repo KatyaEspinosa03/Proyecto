@@ -16,10 +16,21 @@
 body {
   background-image: linear-gradient(#ffffffb3, #F5EDF0, #D1CCDC, #4a4063); }
 
+.estilo-proyectos, .proyectos .youtube, .proyectos .spotify {
+  width: 500px;
+  height: 500px; }
+
+.estilo-proyectos-imagenes, .proyectos .youtube .imagen-youtube, .proyectos .spotify .imagen-spotify {
+  width: 100%;
+  border-radius: 25px;
+  transform: scale(0.8, 0.8);
+  transition: 1s; }
+
 header {
   display: grid;
   position: sticky;
   top: 0px;
+  z-index: 1;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.702); }
   header nav a:hover {
@@ -179,36 +190,27 @@ footer {
   color: #583484;
   font-family: "Career";
   font-size: 200%; }
-.proyectos .youtube {
-  width: 500px;
-  height: 500px; }
-  .proyectos .youtube #imagen-youtube {
-    width: 100%;
-    border-radius: 25px; }
-  .proyectos .youtube .texto-youtube h2 {
-    margin-top: 5%;
-    color: #716A82;
-    text-align: left;
-    text-align: justify;
-    font-weight: bold;
-    font-family: "Inter Medium";
-    margin-bottom: 10%;
-    font-size: 150%; }
-.proyectos .spotify {
-  width: 500px;
-  height: 500px; }
-  .proyectos .spotify #imagen-spotify {
-    width: 100%;
-    margin-top: 10%;
-    border-radius: 25px; }
-  .proyectos .spotify .texto-spotify h2 {
-    margin-top: 5%;
-    color: #716A82;
-    text-align: right;
-    font-weight: bold;
-    font-family: "Inter Medium";
-    font-size: 150%;
-    width: 500px; }
+.proyectos .youtube .imagen-youtube:hover {
+  transform: scale(0.9, 0.9); }
+.proyectos .texto-youtube h2 {
+  margin-top: 5%;
+  color: #716A82;
+  text-align: left;
+  text-align: justify;
+  font-weight: bold;
+  font-family: "Inter Medium";
+  margin-bottom: 10%;
+  font-size: 150%; }
+.proyectos .spotify .imagen-spotify:hover {
+  transform: scale(0.9, 0.9); }
+.proyectos .texto-spotify h2 {
+  margin-top: 5%;
+  color: #716A82;
+  text-align: right;
+  font-weight: bold;
+  font-family: "Inter Medium";
+  font-size: 150%;
+  width: 500px; }
 
 .sobre-mi-descripcion .sobre-mi h1 {
   color: #825ab3;

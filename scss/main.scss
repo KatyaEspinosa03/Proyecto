@@ -20,10 +20,24 @@ body {
 }
 
 
+.estilo-proyectos {
+    width: 500px;
+    height: 500px;
+}
+
+.estilo-proyectos-imagenes {
+    width: 100%;
+    border-radius: 25px;
+    transform: scale(.8, .8);
+    transition: 1s;
+}
+
+
 header {
     display: grid;
     position: sticky;
     top: 0px;
+    z-index: 1;
     width: 100%;  
     background-color: $colorBackgroundLight;
 
@@ -222,17 +236,20 @@ footer {
         font-family:"Career";
         font-size: 200%;
     }
-    
+
     .youtube {
-        width: 500px;
-        height: 500px;
+        @extend .estilo-proyectos;
     
-        #imagen-youtube {
-            width: 100%;
-            @include border-radius(25px);
+        .imagen-youtube {
+            @extend .estilo-proyectos-imagenes;
+
+            &:hover {
+                transform: scale(.9, .9);
+            }
         } 
-    
-        .texto-youtube h2 {
+    }
+
+    .texto-youtube h2 {
             margin-top: 5%;
             color: #716A82;
             text-align: left;
@@ -241,30 +258,28 @@ footer {
             font-family: "Inter Medium";
             margin-bottom: 10%;
             font-size: 150%;
-        }
     }
 
     .spotify {
-        width: 500px;
-        height: 500px;
+        @extend .estilo-proyectos;
     
-        #imagen-spotify {
-            width: 100%;
-            margin-top: 10%;
-            @include border-radius(25px);
+        .imagen-spotify {
+            @extend .estilo-proyectos-imagenes;
+
+            &:hover {
+                transform: scale(.9, .9);
+            }
         } 
-        
-        
-        .texto-spotify h2 {
-            margin-top: 5%;
-            color: #716A82;
-            text-align: right;
-            font-weight: bold;
-            font-family: "Inter Medium";
-            font-size: 150%;
-            width: 500px;
-        
-        }
+    }
+
+    .texto-spotify h2 {
+        margin-top: 5%;
+        color: #716A82;
+        text-align: right;
+        font-weight: bold;
+        font-family: "Inter Medium";
+        font-size: 150%;
+        width: 500px;
     
     }
 }
