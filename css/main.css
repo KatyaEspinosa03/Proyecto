@@ -13,10 +13,6 @@
 @font-face {
   font-family: "Inter Medium";
   src: url(./assets/fonts/Inter-Medium.ttf); }
-.estilo-proyectos, .proyectos .youtube, .proyectos .spotify {
-  width: 500px;
-  height: 500px; }
-
 .estilo-proyectos-imagenes, .proyectos .youtube .imagen-youtube, .proyectos .spotify .imagen-spotify {
   width: 100%;
   border-radius: 25px;
@@ -36,17 +32,19 @@ header {
   header nav a:hover {
     color: #baa8dd; }
   header ul {
-    list-style-type: none;
     padding: 30px;
     font-size: 18px;
     text-align: right; }
   header nav li {
     display: inline; }
   header li a {
-    padding: 8px;
-    color: #825ab3;
+    font-family: "Inter";
     font-weight: bold;
-    font-family: "Inter"; }
+    margin-top: auto;
+    color: #825ab3;
+    text-align: right;
+    font-size: 100%;
+    padding: 8px; }
   header a {
     text-decoration: none;
     color: #3a1f5b;
@@ -170,45 +168,58 @@ footer {
   display: flex;
   flex-direction: column;
   justify-self: center; }
-  .agenda-cita .button, .agenda-cita .pagina-citas .formulario #agendar, .pagina-citas .formulario .agenda-cita #agendar {
-    background-color: #D1CCDC;
+  .agenda-cita .button, .agenda-cita .pagina-citas .formulario .agenda-cita, .pagina-citas .formulario .agenda-cita .agenda-cita {
+    font-family: "Inter";
+    font-weight: none;
+    margin-top: auto;
     color: #4a4063;
-    padding: 10px 32px;
     text-align: center;
+    font-size: 100%;
+    background-color: #D1CCDC;
+    padding: 10px 32px;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     cursor: pointer;
-    font-family: "Inter";
-    border-radius: 7px; }
+    border-radius: 7px;
+    transition: 1s; }
+    .agenda-cita .button:hover, .agenda-cita .pagina-citas .formulario .agenda-cita:hover, .pagina-citas .formulario .agenda-cita .agenda-cita:hover {
+      transform: scale(0.9, 0.9); }
 
 .proyectos h1, .proyectos .sobre-mi h3, .sobre-mi .proyectos h3 {
+  font-family: "Career";
+  font-weight: none;
+  margin-top: auto;
+  color: #583484;
+  text-align: center;
+  font-size: 200%;
   display: flex;
   flex-direction: column-reverse;
-  justify-self: center;
-  text-align: center;
-  color: #583484;
-  font-family: "Career";
-  font-size: 200%; }
-.proyectos .youtube .imagen-youtube:hover {
-  transform: scale(0.9, 0.9); }
+  justify-self: center; }
+.proyectos .youtube {
+  width: 500px;
+  height: 500px; }
+  .proyectos .youtube .imagen-youtube:hover {
+    transform: scale(0.9, 0.9); }
 .proyectos .texto-youtube h2 {
+  font-family: "Inter Medium";
+  font-weight: bold;
   margin-top: 5%;
-  color: #716A82;
+  color: #716a82;
   text-align: left;
+  font-size: 150%;
   text-align: justify;
-  font-weight: bold;
-  font-family: "Inter Medium";
-  margin-bottom: 10%;
-  font-size: 150%; }
-.proyectos .spotify .imagen-spotify:hover {
-  transform: scale(0.9, 0.9); }
+  margin-bottom: 10%; }
+.proyectos .spotify {
+  width: 500px;
+  height: 500px; }
+  .proyectos .spotify .imagen-spotify:hover {
+    transform: scale(0.9, 0.9); }
 .proyectos .texto-spotify h2 {
-  margin-top: 5%;
-  color: #716A82;
-  text-align: right;
-  font-weight: bold;
   font-family: "Inter Medium";
+  font-weight: bold;
+  margin-top: 5%;
+  color: #716a82;
+  text-align: right;
   font-size: 150%;
   width: 500px; }
 
@@ -242,15 +253,19 @@ footer {
   flex-direction: column; }
 
 .pagina-citas #titulo-citas h1, .pagina-citas #titulo-citas .sobre-mi h3, .sobre-mi .pagina-citas #titulo-citas h3 {
+  font-family: "Career";
+  font-weight: none;
+  margin-top: auto;
   color: #3a1f5b;
-  font-family: "Career";
-  font-size: 200%;
-  text-align: center; }
-.pagina-citas .formulario {
   text-align: center;
+  font-size: 200%; }
+.pagina-citas .formulario {
   font-family: "Career";
-  font-size: 130%;
+  font-weight: none;
+  margin-top: 5%;
   color: #702b92;
+  text-align: center;
+  font-size: 130%;
   margin-bottom: 5%; }
   .pagina-citas .formulario h2 {
     display: flex;
@@ -259,21 +274,23 @@ footer {
   .pagina-citas .formulario span.taller, .pagina-citas .formulario span.tradicional {
     font-family: "Inter";
     font-size: 80%;
-    background-color: white;
-    border-radius: 5px;
     align-self: center; }
+  .pagina-citas .formulario .agenda-cita:hover {
+    transform: scale(0.9, 0.9); }
   .pagina-citas .formulario #horario {
-    background-color: #f5f3f8;
+    font-family: "Inter";
+    font-weight: none;
+    margin-top: auto;
     color: #4a4063;
-    padding: 10px 32px;
     text-align: center;
+    font-size: 100%;
+    background-color: #f5f3f8;
+    padding: 10px 32px;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: "Inter"; }
+    cursor: pointer; }
   .pagina-citas .formulario #mensaje {
-    height: 100px;
-    width: 200px; }
+    width: 200px;
+    height: 100px; }
 
 /*# sourceMappingURL=main.css.map */

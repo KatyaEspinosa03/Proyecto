@@ -24,7 +24,6 @@ header {
     }
 
     ul {
-        list-style-type: none;
         padding: 30px;
         font-size: 18px;
         text-align: right;
@@ -35,18 +34,14 @@ header {
     }
 
     li a {
+        @include estilo-texto("Inter", bold, auto, $colorPurple, right, 100%);
         padding: 8px;
-        color: $colorPurple;
-        font-weight: bold;
-        font-family: "Inter";
     }
 
     a {
-
         text-decoration: none;
         color: $colorDarkPurple;
         font-family: "Inter";
-    
     }
 
 }
@@ -90,20 +85,16 @@ footer {
         }
 
         img {
-
             width: 8%;
 
         } 
 
         #imagen-youtube-footer {
-
             width: 7%;
 
         }
         #imagen-spotify-footer {
-
             width: 7.5%;
-
         }
     }
 }
@@ -135,7 +126,6 @@ footer {
         text-align: justify;
         }
     }
-
 }
 
 .seccion1 {
@@ -159,7 +149,6 @@ footer {
 
 .descripcion {
     #servicios { 
-
         margin-top: 10%;
         margin-bottom: 10%;
 
@@ -176,45 +165,38 @@ footer {
             @include estilo-texto("Inter Regular", bold, none, rgb(67, 39, 105) , right, 125%);
         }
     }
-
 }
 
 .agenda-cita {
-
     display: flex;
     flex-direction: column;
     justify-self: center;
     
     .button {
-
+        @include estilo-texto("Inter", none, auto, $colorBackgroundDark, center, 100%);
         background-color:#D1CCDC;
-        color:$colorBackgroundDark;
         padding: 10px 32px;
-        text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
         cursor: pointer;
-        font-family: "Inter";
         @include border-radius(7px);
-        
+        transition: 1s;
+
+        &:hover {
+            transform: scale(.9, .9);
+        }
     }
 }
 
 .proyectos {
-
     h1 {
+        @include estilo-texto("Career", none, auto,  rgb(88, 52, 132), center, 200%);
         display: flex;
         flex-direction: column-reverse;
         justify-self: center;
-        text-align: center;
-        color: rgb(88, 52, 132);
-        font-family:"Career";
-        font-size: 200%;
     }
-
     .youtube {
-        @extend .estilo-proyectos;
+        @include width-height(500px, 500px);
     
         .imagen-youtube {
             @extend .estilo-proyectos-imagenes;
@@ -224,20 +206,13 @@ footer {
             }
         } 
     }
-
     .texto-youtube h2 {
-            margin-top: 5%;
-            color: #716A82;
-            text-align: left;
+        @include estilo-texto("Inter Medium", bold, 5%,  $ColorTextoProyectos, left, 150%);
             text-align: justify;
-            font-weight: bold;
-            font-family: "Inter Medium";
             margin-bottom: 10%;
-            font-size: 150%;
     }
-
     .spotify {
-        @extend .estilo-proyectos;
+        @include width-height(500px, 500px);
     
         .imagen-spotify {
             @extend .estilo-proyectos-imagenes;
@@ -247,16 +222,9 @@ footer {
             }
         } 
     }
-
     .texto-spotify h2 {
-        margin-top: 5%;
-        color: #716A82;
-        text-align: right;
-        font-weight: bold;
-        font-family: "Inter Medium";
-        font-size: 150%;
-        width: 500px;
-    
+        @include estilo-texto("Inter Medium", bold, 5%,  $ColorTextoProyectos, right, 150%);
+        width: 500px;   
     }
 }
 
@@ -309,17 +277,11 @@ footer {
 .pagina-citas{
 
     #titulo-citas h1 {
-        color: $colorDarkPurple;
-        font-family:"Career";
-        font-size: 200%;
-        text-align: center;
+        @include estilo-texto("Career", none, auto, $colorDarkPurple, center, 200%);
     }
 
     .formulario {
-        text-align: center;
-        font-family:"Career";
-        font-size: 130%;
-        color: #702b92;
+        @include estilo-texto("Career", none, 5%,  rgb(112, 43, 146), center, 130%);
         margin-bottom: 5%;
 
         h2{
@@ -331,36 +293,34 @@ footer {
         span.taller {
             font-family: "Inter";
             font-size: 80%;
-            background-color: white;
-            @include border-radius(5px);
             align-self: center;
         }
         
         span.tradicional {
             @extend span, .taller;
+
         }
 
-        #agendar {
-            @extend .button    
+        .agenda-cita {
+            @extend .button;    
+
+            &:hover {
+                transform: scale(.9, .9);
+            }
         }
         
         #horario {
+            @include estilo-texto("Inter", none, auto, $colorBackgroundDark, center, 100%);
             background-color:rgb(245, 243, 248);
-            color: $colorBackgroundDark;
             padding: 10px 32px;
-            text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
             cursor: pointer;
-            font-family:"Inter";
         }
 
         #mensaje {
-            height: 100px;
-            width: 200px;
+            @include width-height(200px, 100px);
         } 
-    } 
-    
+    }  
 }
     
