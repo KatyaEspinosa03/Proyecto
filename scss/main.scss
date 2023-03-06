@@ -224,7 +224,7 @@ footer {
     }
     .texto-spotify h2 {
         @include estilo-texto("Inter Medium", bold, 5%,  $ColorTextoProyectos, right, 150%);
-        width: 500px;   
+        width: 100%;   
     }
 }
 
