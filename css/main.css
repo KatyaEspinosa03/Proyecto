@@ -293,4 +293,21 @@ footer {
     width: 200px;
     height: 100px; }
 
+@media (max-width: 770px) {
+  .proyectos .texto-youtube {
+    width: 100%;
+    height: 100%; }
+  .proyectos .texto-spotify {
+    width: 100%;
+    height: 100%;
+    text-align: left; } }
+@media (max-width: 1200px) {
+  .proyectos .texto-youtube {
+    width: 100%;
+    height: 100%; }
+  .proyectos .texto-spotify {
+    width: 100%;
+    height: 100%;
+    text-align: left; } }
+
 /*# sourceMappingURL=main.css.map */

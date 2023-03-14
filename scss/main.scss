@@ -290,14 +290,18 @@ footer {
             align-self: center;
         }
 
+    
         span.taller {
             font-family: "Inter";
             font-size: 80%;
             align-self: center;
+            
         }
         
         span.tradicional {
             @extend span, .taller;
+
+            
 
         }
 
@@ -324,3 +328,30 @@ footer {
     }  
 }
     
+@media (max-width: 770px){
+.proyectos {
+    .texto-youtube {
+        width: 100%;
+        height: 100%;
+    }
+    .texto-spotify {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    }
+}
+}
+
+@media (max-width: 1200px){
+    .proyectos {
+        .texto-youtube {
+            width: 100%;
+            height: 100%;
+        }
+        .texto-spotify {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        }
+    }
+    }
